@@ -1,0 +1,201 @@
+.Banner {
+  width: 100%;
+  padding: 20px 7%;
+  margin: 0 auto;
+}
+.bold {
+  font-weight: 900;
+  font-size: 3rem !important;
+  line-height: 1.15;
+  color: #40196D;
+}
+.card-main {
+  line-height: 1.5;
+  font-size: 1.15rem;
+  color: black;
+  font-weight: 400;
+}
+.wrap {
+  width: 460px;
+  height: 460px;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #40196D;
+}
+.object {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: rotate 10s infinite linear;
+  position: absolute;
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  z-index: 1;
+}
+.object-reverse {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: rotate 10s infinite linear;
+  position: absolute;
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  z-index: 1;
+  animation-direction: reverse;
+}
+.object-fast {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: rotate 6s infinite ease-in-out;
+  position: absolute;
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  z-index: 1;
+  animation-direction: reverse;
+}
+.object_img {
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  animation: zrotate 10s infinite linear ease-in-out;
+  z-index: 1;
+  animation-direction: reverse;
+  background-color: darkgrey;
+  padding: 2px; 
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg) translateX(200px);
+    transform: rotate(0deg) translateX(250px);
+    z-index: 1;
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(220px);
+    transform: rotate(360deg) translateX(250px);
+    z-index: 9;
+  }
+}
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-20px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
+@keyframes zrotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.banner-right-image {
+  z-index: 999;
+  -webkit-filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666);
+  animation: float 4s ease-in-out infinite;
+  animation-delay: 3s;
+ 
+}
+
+@-webkit-keyframes shadow-drop-2-br {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0) translateY(0);
+    transform: translateZ(0) translateX(0) translateY(0);
+    
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateX(-12px) translateY(-12px);
+    transform: translateZ(50px) translateX(-12px) translateY(-12px);
+    
+  }
+}
+@keyframes shadow-drop-2-br {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0) translateY(0);
+    transform: translateZ(0) translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateX(-12px) translateY(-12px);
+    transform: translateZ(50px) translateX(-12px) translateY(-12px) !important;
+    }
+}
+ .banner-left{
+  margin-right: 20px !important;
+  text-align: left;
+} 
+@media screen and (max-width: 1020px) {
+  .banner-right{
+  zoom: 85% !important;
+    transition: ease-in;
+    /* margin-top: -30px !important; */
+  }
+  .banner-left{
+    zoom: 85% !important;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .banner-right{
+  zoom: 75% !important;
+    transition: ease-in;
+    /* margin-top: -30px !important; */
+    margin-right: 0px !important;
+  }
+  .banner-left{
+    zoom: 67.1% !important;
+  }
+}
+@media screen and (max-width: 770px) {
+  .banner-right{
+    display: none !important;
+
+  }
+  .banner-left{
+    text-align: center;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 10px auto;
+    flex: 1;
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+  .Banner{
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #5b87e58c, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+ 
+  }
+  .bold{
+    font-size: 2.5rem !important;
+    width: 100% !important;
+    margin: 10px auto !important;
+    margin-bottom: 20px !important;
+  }
+  card-main{
+    font-size: medium;
+  }
+  .little{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .matas{
+    display: flex;
+  }
+}

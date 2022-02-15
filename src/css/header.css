@@ -1,0 +1,145 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 64px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.25);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: white;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.log{
+    justify-content: flex-start;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* object-fit: contain; */
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.link{
+    margin: 0px 10px;
+    color: #40196D;
+    font-weight: 500;
+    font-size: 1.0em;
+}
+.link:hover{
+    color: #40196D;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.dropdown{
+    font-size: 0.90rem !important;
+    font-weight: 400 !important;
+    margin: 7px 5px !important;
+    /* padding: 10px 0px; */
+}
+
+.navButton {
+    font-size: 1.0em !important;
+    font-weight: 500 !important;
+    color: #40196D !important;
+    border: none !important;
+}
+/* .navButtons:hover {
+    color: white !important;
+    border-color: #40196D !important;
+    font-size: 1.0rem !important;
+    font-weight: 500 !important;
+} */
+.navButtons{
+    font-size: 1.0em !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+    background-color: #40196D !important;
+    
+    
+}
+
+.hamburger{
+    color: #40196D !important;
+    font-size: 1.4rem;
+    display: none;
+}
+
+@media screen and (max-width: 870px) {
+    .hamburger {
+      display: flex;
+    }
+
+    .link, .nav-links,.link>.navButton, .link>.navButtons{
+        display: none;
+    }
+    .header{
+        height: 60px;
+    }
+  }
+  .modal{
+      width: 100vw !important;
+      height: 100vh !important;
+     
+  }
+  .ant-modal-content {
+    position: relative;
+    width: 100vw;
+    /* top: -25vh; */
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    pointer-events: auto;
+}
+
+.ant-modal {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: 'tnum', "tnum";
+    pointer-events: none;
+    position: relative;
+    max-width: calc(100vw);
+    top: 64px;
+    
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+.lin{
+    color: #40196D !important;
+    font-weight: 500 !important;
+    font-size: 1.0em !important;
+}
+    

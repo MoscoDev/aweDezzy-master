@@ -1,0 +1,32 @@
+.Faq > .header {
+  height: 40vh;
+  background-image: url(https://downloads.intercomcdn.com/i/o/189103/5fd320cb95539d92f0862435/bcef15b269700ae2c870f6eb2fa8218f.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  margin-bottom: 60px;
+}
+.header .transparent-text {
+  color: white;
+  font-weight: 900;
+  font-size: 2.7rem;
+  max-width: 500px;
+  text-align: center;
+}
+.title{
+    color:#40196d !important;
+    font-weight: bold;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    color:#40196d !important;
+}
+@media screen and (max-width: 1020px) {
+.Faq > .header {
+    height: 25vh;
+}
+.accordion{
+    width: 80vw !important;
+}
+}
