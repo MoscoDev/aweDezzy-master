@@ -5,7 +5,6 @@ import facebook from "../images/Facebook_f_logo_(2021).svg";
 import "../css/Signup.css";
 import { Button, Divider, Input } from "antd";
 
-
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -172,6 +171,7 @@ const Signup = () => {
               </span>
               <span className="hide">signup with Facebook</span>
             </Button>
+
           </div>
           <div>{JSON.stringify(data)}</div>
         </form>
