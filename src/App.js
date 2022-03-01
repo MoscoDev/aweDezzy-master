@@ -21,6 +21,7 @@ const App = () => (
         <Route path="/signup" exact element={<Signup />} />
         <Route path="/signup" exact element={<Signup />} />
         <Route path="/Todo" exact element={<Todo />} />
+        <Route path="/Bank" exact element={<Bank />} />
         <Route path="/Tagrender" exact element={<Tagrender />} />
       </Routes>
       <Footer />
