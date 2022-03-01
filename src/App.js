@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Todo from "./pages/Todo";
 import Tagrender from "./pages/Tagrender";
+import Bank from "./Bank";
 
 const App = () => (
   <div className="App">
